@@ -3,8 +3,8 @@ from peewee import MySQLDatabase, Model, CharField, ForeignKeyField \
 from datetime import datetime
 from playhouse.db_url import connect
 
-#database = MySQLDatabase('goodreads', user='root', password='root')
-database = connect('mysql://erfan:1234@127.0.0.1:3306/goodreads')
+#database = MySQLDatabase('goodreads', user='', password='')
+database = connect('mysql://user:pass@127.0.0.1:3306/goodreads')
 
 class BaseModel(Model):
     class Meta:
